@@ -33,5 +33,9 @@
     </td>
     </tr>
   </table>
+  =========================</br/>
+  <%
+    out.println(person.getName());
+  %>
   </body>
 </html>
