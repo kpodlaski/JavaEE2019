@@ -1,0 +1,43 @@
+package data;
+
+public class Person {
+
+    private String name;
+    private String surname;
+    private String photo;
+
+    public Person(){
+        this("Anna","Annowska",
+                "data:image/png;base64,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");
+    }
+
+    public Person(String name, String surname, String photo) {
+        this.name = name;
+        this.surname = surname;
+        this.photo = photo;
+    }
+
+    public String getName() {
+        return name;
+    }
+
+    public void setName(String name) {
+        this.name = name;
+    }
+
+    public String getSurname() {
+        return surname;
+    }
+
+    public void setSurname(String surname) {
+        this.surname = surname;
+    }
+
+    public String getPhoto() {
+        return photo;
+    }
+
+    public void setPhoto(String photo) {
+        this.photo = photo;
+    }
+}
