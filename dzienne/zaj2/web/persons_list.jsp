@@ -25,7 +25,7 @@ Lista osób<br/>
 %>
 
 <jstl:forEach items="${persons.getPersons()}" var="person" varStatus="it">
-    <a href="person.jsp?id=${it.index} "> ${person.name} ${person.surname}</a>
+    <a href="person.jsp?id=${it.index}"> ${person.name} ${person.surname}</a>
 </jstl:forEach>
 </body>
 </html>
