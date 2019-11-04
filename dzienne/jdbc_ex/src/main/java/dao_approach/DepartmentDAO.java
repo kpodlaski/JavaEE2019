@@ -2,7 +2,7 @@ package dao_approach;
 
 import dao_approach.model.Department;
 
-public interface DepartmentDAO extends PersonDAO {
+public interface DepartmentDAO  {
     Department getDepartmentById(int id);
 
     Department getDepartmentByName(String name);
