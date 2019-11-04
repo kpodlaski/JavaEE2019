@@ -8,7 +8,7 @@ public class EasyStart {
             throws ClassNotFoundException,
             IllegalAccessException, InstantiationException, SQLException {
 
-        Class.forName("org.sqlite.JDBC").newInstance();
+        //Class.forName("org.sqlite.JDBC").newInstance();
         Connection conn = DriverManager.getConnection("" +
                 "jdbc:sqlite:C:\\Users\\user\\git\\JavaEE2019\\persons.db");
         Statement st = conn.createStatement();
