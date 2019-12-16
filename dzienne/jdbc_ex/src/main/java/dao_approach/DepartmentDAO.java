@@ -2,10 +2,12 @@ package dao_approach;
 
 import dao_approach.model.Department;
 
-public interface DepartmentDAO  {
-    Department getDepartmentById(int id);
+import java.sql.SQLException;
 
-    Department getDepartmentByName(String name);
+public interface DepartmentDAO  {
+    Department getDepartmentById(int id) ;
+
+    Department getDepartmentByName(String name) ;
 
     boolean updateDepartment(Department d);
 

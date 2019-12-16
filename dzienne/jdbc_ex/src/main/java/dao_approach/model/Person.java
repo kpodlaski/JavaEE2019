@@ -9,6 +9,17 @@ public class Person {
     private String position;
     private int departmentId;
 
+    public Person(){}
+
+    public Person(int id, String name, String sname, String position, int depId) {
+        this.id=id;
+        this.name=name;
+        this.surname=sname;
+        this.position=position;
+        this.departmentId=depId;
+    }
+
+
     public int getId() {
         return id;
     }
@@ -26,7 +37,7 @@ public class Person {
         return Objects.hash(id);
     }
 
-    private void setId(int id) {
+    public void setId(int id) {
         this.id = id;
     }
 

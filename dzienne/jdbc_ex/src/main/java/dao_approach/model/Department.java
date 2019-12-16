@@ -7,6 +7,14 @@ public class Department {
     private String Name;
     private List<Person> members;
 
+    public Department(){}
+
+    public Department(int id, String name, List<Person> members) {
+        this.id = id;
+        Name = name;
+        this.members = members;
+    }
+
     public int getId() {
         return id;
     }

@@ -2,6 +2,7 @@ package dao_approach;
 
 import dao_approach.model.Person;
 
+import java.sql.SQLException;
 import java.util.List;
 
 public interface PersonDAO {
