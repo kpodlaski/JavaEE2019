@@ -1,0 +1,22 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<persistence xmlns="http://xmlns.jcp.org/xml/ns/persistence" version="2.1">
+
+    <persistence-unit name="PracownicyUnit">
+        <provider>org.hibernate.jpa.HibernatePersistenceProvider</provider>
+        <class>jpa_approach.model.Jednostka</class>
+        <class>jpa_approach.model.Pracownik</class>
+        <class>jpa_approach.model.Stanowisko</class>
+        <properties>
+            <property name="hibernate.connection.url" value="jdbc:sqlite:C:/Users/user/git/JavaEE2019/pracownicy.db"/>
+            <property name="hibernate.connection.driver_class" value="org.sqlite.JDBC"/>
+            <property name="hibernate.connection.username" value=""/>
+            <property name="hibernate.connection.password" value=""/>
+            <property name="hibernate.archive.autodetection" value="class"/>
+            <property name="hibernate.show_sql" value="true"/>
+            <property name="hibernate.format_sql" value="true"/>
+            <property name="hibernate.hbm2ddl.auto" value="update"/>
+            <property name="hibernate.dialect"
+                      value="org.hibernate.dialect.SQLiteDialect"/>
+        </properties>
+    </persistence-unit>
+</persistence>
