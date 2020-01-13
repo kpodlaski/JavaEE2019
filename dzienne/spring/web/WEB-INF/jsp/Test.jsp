@@ -11,6 +11,8 @@
     <title>Title</title>
 </head>
 <body>
-Odpowiedz testowa
+Odpowiedz testowa: <br/>
+${data}
+${data.hashCode()}
 </body>
 </html>
