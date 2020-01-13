@@ -14,5 +14,10 @@
 Odpowiedz testowa: <br/>
 ${data}
 ${data.hashCode()}
+<table>
+    <tr><td>Imie</td><td>${person.name}</td></tr>
+    <tr><td>Nazwisko</td><td>${person.surname}</td></tr>
+    <tr><td>Nr. buta</td><td>${person.shoeSize}</td></tr>
+</table>
 </body>
 </html>
